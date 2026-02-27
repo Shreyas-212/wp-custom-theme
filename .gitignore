@@ -1,0 +1,26 @@
+# Ignore WordPress core
+wp-admin/
+wp-includes/
+
+# Ignore uploads
+wp-content/uploads/
+
+# Ignore plugins
+wp-content/plugins/
+
+# Ignore node modules
+node_modules/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore IDE settings
+.vscode/
+.idea/
