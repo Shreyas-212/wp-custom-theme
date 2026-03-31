@@ -125,6 +125,6 @@ function ourLoginCSS() {
 
 add_filter('login_headertitle', 'outLoginTitle');
 
-function ourLoginTitle() {
+function outLoginTitle() {
     return get_bloginfo('name');
 }
