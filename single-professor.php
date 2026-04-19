@@ -31,7 +31,8 @@ while(have_posts()) {
 
                 $existStatus = 'no';
 
-                $existQuery = new WP_Query(array(
+                if(is_user_logged_in()) {
+                    $existQuery = new WP_Query(array(
                     'author' => get_current_user_id(),
                     'post_type' => 'like',
                     'meta_query' => array(
@@ -45,6 +46,7 @@ while(have_posts()) {
 
                 if($existQuery->found_posts) {
                     $existStatus = 'yes';
+                }
                 }
                 ?>
 
